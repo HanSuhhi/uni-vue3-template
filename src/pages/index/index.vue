@@ -4,6 +4,3 @@
     <view i-uiw-smile />
   </view>
 </template>
-
-
-
