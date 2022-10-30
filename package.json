@@ -7,9 +7,11 @@
     "dev:mp-alipay": "uni -p mp-alipay",
     "build:h5": "uni build",
     "build:mp-alipay": "uni build -p mp-alipay",
-    "eslint": "eslint ."
+    "eslint": "eslint .",
+    "stylelint": "stylelint **/*.{,vue,css}"
   },
   "dependencies": {
+    "@condorhero/stylelint-config-vue": "^2.0.0",
     "@dcloudio/uni-app": "3.0.0-alpha-3000020210521001",
     "@dcloudio/uni-components": "3.0.0-alpha-3060720221018006",
     "@dcloudio/uni-h5": "3.0.0-alpha-3060720221018006",
@@ -19,7 +21,6 @@
     "vue-i18n": "^9.1.9"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.19.1",
     "@dcloudio/types": "^3.0.16",
     "@dcloudio/uni-automator": "3.0.0-alpha-3060720221018006",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-3060720221018006",
@@ -32,6 +33,9 @@
     "eslint-plugin-vue": "^9.6.0",
     "eslint-plugin-vue-pug-sfc": "1.0.0-alpha.20",
     "pug": "^3.0.2",
+    "stylelint": "^14.11.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^5.0.0",
     "typescript": "^4.8.3",
     "unocss": "^0.46.1",
     "vite": "^3.1.8"
