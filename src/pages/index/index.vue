@@ -4,5 +4,5 @@
 <template lang="pug">
 view.content
   view hello world!
-  view(i-uiw-smile)
+  .i-uiw-smile
 </template>

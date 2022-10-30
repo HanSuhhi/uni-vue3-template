@@ -11,7 +11,6 @@
     "stylelint": "stylelint **/*.{,vue,css}"
   },
   "dependencies": {
-    "@condorhero/stylelint-config-vue": "^2.0.0",
     "@dcloudio/uni-app": "3.0.0-alpha-3000020210521001",
     "@dcloudio/uni-components": "3.0.0-alpha-3060720221018006",
     "@dcloudio/uni-h5": "3.0.0-alpha-3060720221018006",
@@ -21,14 +20,17 @@
     "vue-i18n": "^9.1.9"
   },
   "devDependencies": {
+    "@condorhero/stylelint-config-vue": "^2.0.0",
     "@dcloudio/types": "^3.0.16",
     "@dcloudio/uni-automator": "3.0.0-alpha-3060720221018006",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-3060720221018006",
     "@dcloudio/uni-stacktracey": "3.0.0-alpha-3060720221018006",
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3060720221018006",
+    "@hansuhhi-don/csss": "^0.0.0",
     "@iconify/json": "^2.1.129",
     "@types/node": "^18.11.7",
     "@typescript-eslint/parser": "^5.41.0",
+    "@unocss/extractor-pug": "^0.46.1",
     "eslint": "^8.26.0",
     "eslint-plugin-vue": "^9.6.0",
     "eslint-plugin-vue-pug-sfc": "1.0.0-alpha.20",

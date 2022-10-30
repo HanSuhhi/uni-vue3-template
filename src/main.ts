@@ -3,6 +3,7 @@ import App from "./App.vue";
 import { createPinia } from "pinia";
 
 import "uno.css";
+import "@hansuhhi-don/csss/dist/style.css";
 
 export function createApp() {
   const pinia = createPinia();
