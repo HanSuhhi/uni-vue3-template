@@ -6,6 +6,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [uni(), unocss()],
+  envDir: "env",
   envPrefix: [],
   resolve: {
     alias: {
