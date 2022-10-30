@@ -1,6 +1,11 @@
-<template>
-  <view class="content">
-    <view>hello world!</view>
-    <view i-uiw-smile />
-  </view>
+<script setup lang='ts'>
+import { ref } from 'vue';
+
+const a = ref(1);
+</script>
+
+<template lang="pug">
+view.content
+  view hello world!
+  view(i-uiw-smile)
 </template>
