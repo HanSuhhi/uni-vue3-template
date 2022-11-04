@@ -33,7 +33,7 @@
     "@unocss/extractor-pug": "^0.46.1",
     "eslint": "^8.26.0",
     "eslint-plugin-vue": "^9.6.0",
-    "eslint-plugin-vue-pug-sfc": "1.0.0-alpha.20",
+    "eslint-plugin-vue-pug": "^0.5.4",
     "pug": "^3.0.2",
     "stylelint": "^14.11.0",
     "stylelint-config-rational-order": "^0.1.2",

@@ -12,14 +12,14 @@
       "jsx": true
     }
   },
-  "extends": ["plugin:vue/recommended", "plugin:vue-pug-sfc/recommended"],
+  "extends": ["plugin:vue/recommended", "plugin:vue-pug/vue3-recommended"],
   "globals": {
     "defineProps": "readonly",
     "defineEmits": "readonly",
     "withDefaults": "readonly"
   },
   "rules": {
-    "vue-pug-sfc/this-in-template": "warn",
+    "vue-pug/this-in-template": "warn",
     "no-debugger": "error",
     "no-var": "error",
     "indent": ["error", 2, { "SwitchCase": 1 }],

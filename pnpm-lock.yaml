@@ -18,7 +18,7 @@ specifiers:
   '@unocss/extractor-pug': ^0.46.1
   eslint: ^8.26.0
   eslint-plugin-vue: ^9.6.0
-  eslint-plugin-vue-pug-sfc: 1.0.0-alpha.20
+  eslint-plugin-vue-pug: ^0.5.4
   pinia: ^2.0.23
   pug: ^3.0.2
   stylelint: ^14.11.0
@@ -53,7 +53,7 @@ devDependencies:
   '@unocss/extractor-pug': 0.46.1_pug@3.0.2
   eslint: 8.26.0
   eslint-plugin-vue: 9.6.0_eslint@8.26.0
-  eslint-plugin-vue-pug-sfc: 1.0.0-alpha.20_eslint@8.26.0
+  eslint-plugin-vue-pug: 0.5.4_eslint-plugin-vue@9.6.0
   pug: 3.0.2
   stylelint: 14.14.0
   stylelint-config-rational-order: 0.1.2
@@ -2416,16 +2416,15 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-plugin-vue-pug-sfc/1.0.0-alpha.20_eslint@8.26.0:
-    resolution: {integrity: sha512-xyFK3XLAVyTqKDT1BoQHdN+jvuRmyG5KKA5XNLa3iijE+VmB1Y2jJMlhTx+9U1AtFoFiovFGQy2M/oj6Vdx19w==}
-    engines: {node: '>= 16.9.0', npm: '>= 7.0.0', pnpm: '>= 6.17.0'}
-    deprecated: Please use @rashfael new package eslint-plugin-vue-pug instead.
+  /eslint-plugin-vue-pug/0.5.4_eslint-plugin-vue@9.6.0:
+    resolution: {integrity: sha512-4/EHB8B4cSLBJkaV4D+fivbZMiw/+Ios0BLJGIHm9mibZw1Yp5hp7xai/5iSKlnPYpsaFCwtzed9WGiUwOrBdQ==}
+    peerDependencies:
+      eslint-plugin-vue: ^9.0.0
     dependencies:
-      pug-lexer: 5.0.1
-      vue-eslint-parser: 8.0.1_eslint@8.26.0
+      eslint-plugin-vue: 9.6.0_eslint@8.26.0
+      vue-eslint-parser-template-tokenizer-pug: 0.4.9
     transitivePeerDependencies:
-      - eslint
-      - supports-color
+      - vue-eslint-parser
     dev: true
 
   /eslint-plugin-vue/9.6.0_eslint@8.26.0:
@@ -2444,14 +2443,6 @@ packages:
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /eslint-scope/6.0.0:
-    resolution: {integrity: sha512-uRDL9MWmQCkaFus8RF5K9/L/2fn+80yoW3jkD53l4shjCh26fCtvJGasxjUqP5OT87SYTxCVA3BwTUzuELx9kA==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dependencies:
-      esrecurse: 4.3.0
-      estraverse: 5.3.0
     dev: true
 
   /eslint-scope/7.1.1:
@@ -6098,22 +6089,12 @@ packages:
       vue: 3.2.41
     dev: false
 
-  /vue-eslint-parser/8.0.1_eslint@8.26.0:
-    resolution: {integrity: sha512-lhWjDXJhe3UZw2uu3ztX51SJAPGPey1Tff2RK3TyZURwbuI4vximQLzz4nQfCv8CZq4xx7uIiogHMMoSJPr33A==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+  /vue-eslint-parser-template-tokenizer-pug/0.4.9:
+    resolution: {integrity: sha512-Rt5dI7OJG9q7EvXIlcYHqzU39RuHxq7KLjjJ/gxDNj3pE1GU5iIbXGZMLhdTPD8CTCHmdhV/V7m7XmclawgjKg==}
     peerDependencies:
-      eslint: '>=6.0.0'
+      vue-eslint-parser: ^9.0.0
     dependencies:
-      debug: 4.3.4
-      eslint: 8.26.0
-      eslint-scope: 6.0.0
-      eslint-visitor-keys: 3.3.0
-      espree: 9.4.0
-      esquery: 1.4.0
-      lodash: 4.17.21
-      semver: 7.3.8
-    transitivePeerDependencies:
-      - supports-color
+      pug-lexer: 5.0.1
     dev: true
 
   /vue-eslint-parser/9.1.0_eslint@8.26.0:
